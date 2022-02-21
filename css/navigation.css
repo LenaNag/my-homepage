@@ -1,0 +1,28 @@
+.navigation__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation__listItem {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 2px 3px 5px #8395a7;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.js-navigation__link--dark {
+    color: #fff;
+}
+
+.navigation__listItem:hover {
+    background-color: #8395a7;
+}

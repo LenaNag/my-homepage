@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja strona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="content js-content">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__listItem"><a class="navigation__link js-navigation__linkAboutMe" href="#o-mnie">O
+                    mnie</a></li>
+            <li class="navigation__listItem"><a class="navigation__link js-navigation__linkEducation"
+                    href="#wyksztalcenie">Wykształcenie</a>
+            </li>
+            <li class="navigation__listItem"><a class="navigation__link js-navigation__linkForeignLanguages"
+                    href="#jezyki-obce">Języki obce</a></li>
+            <li class="navigation__listItem"><a class="navigation__link js-navigation__linkHobby"
+                    href="#zainteresowania">Zainteresowania</a></li>
+            <li class="navigation__listItem"><a class="navigation__link js-navigation__linkContact"
+                    href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__mainHeader">Alena Nahornaya - junior frontend developer 😁</h1>
+        <img class="header__photo js-header__photo" src="https://i.postimg.cc/0jwtsT5Y/Photo-Alena-N.jpg"
+            alt="Alena Nahornaya">
+        <p>
+            <button class="header__hidePhotoButton js-header__hidePhotoButton">Ukryj zdjęcie</button>
+        </p>
+        <p>
+            <button class="header__backgroundChangeButton js-header__backgroundChangeButton">Włącz ciemny motyw</button>
+        </p>
+    </header>
+    <main>
+        <section class="section">
+            <h2 class="section__header" id="o-mnie">O mnie</h2>
+            <p>Nazywam się Alena Nahornaya. Pochodzę z Białorusi. Skończyłam szkołę policealną Cosinus, kierunek –
+                Technik informatyk. Zdobyłam kwalifikację EE.08, EE.09. Aktualnie skupiłam się na <em>frontendzie</em>.
+                Ciągłe
+                rozwijam swoje umiejętności. <em>Lubię się uczyć i chętnie podchodzę do nowych wyzwań</em></p>
+        </section>
+        <section class="section">
+            <h2 class="section__header" id="wyksztalcenie">Wykształcenie</h2>
+            <div class="tableContainer">
+                <table class="table">
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="col">Uczelnia</th>
+                        <th class="table__cell table__cell--header" scope="col">Miasto</th>
+                        <th class="table__cell table__cell--header" scope="col">Kierunek</th>
+                        <th class="table__cell table__cell--header" scope="col">Specjalizacja</th>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">YouCode - internetowa szkoła
+                            programowania</th>
+                        <td class="table__cell">Warszawa, Polska</td>
+                        <td class="table__cell">Frontend Developer od podstaw</td>
+                        <td class="table__cell">Frontend Developer od podstaw</td>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">Policealna szkoła Cosinus</th>
+                        <td class="table__cell">Warszawa, Polska</td>
+                        <td class="table__cell">Informatyka</td>
+                        <td class="table__cell">Technik Informatyk</td>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">Centrum edukacyjne “Stormnet
+                            Technologies”</th>
+                        <td class="table__cell">Mińsk, Białoruś</td>
+                        <td class="table__cell">Tester Oprogramowania</td>
+                        <td class="table__cell">Tester Oprogramowania</td>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">Międzynarodowy Państwowy Ekologiczny
+                            Uniwersytet
+                            im. A.D.Sacharowa</th>
+                        <td class="table__cell">Mińsk, Białoruś</td>
+                        <td class="table__cell">Radioekologia</td>
+                        <td class="table__cell">Radioekolog</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__header" id="jezyki-obce">Języki obce</h2>
+            <p>
+            <ul class="section__list">
+                <li>Rosyjski – ojczysty</li>
+                <li>Polski – poziom zaawansowany</li>
+                <li>Angielski – poziom zaawansowany</li>
+            </ul>
+            </p>
+        </section>
+        <section class="section">
+            <h2 class="section__header" id="zainteresowania">Zainteresowania</h2>
+            <p>
+            <ul class="section__list">
+                <li>Tworzenie witryn i aplikacyj internetowych</li>
+                <li>Języki obce</li>
+                <li>Podróże</li>
+                <li>Joga</li>
+            </ul>
+            </p>
+        </section>
+        <section class="section">
+            <h2 class="section__header" id="kontakt">Zapraszam do kontaktu</h2>
+            <p>
+            <ul class="section__contactList">
+                <li>E-mail: <a class="section__contactLink"
+                        href="mailto:nahornaya.alena@gmail.com">nahornaya.alena@gmail.com</a></li>
+                <li>Tel: <a class="section__contactLink" href="tel:+48.777777777">777 777 777</a></li>
+            </ul>
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright &#xa9; 2022 by Alena Nahornaya</p>
+    </footer>
+</body>
+
+</html>

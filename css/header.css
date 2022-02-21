@@ -1,0 +1,24 @@
+.header__mainHeader {
+    background-color: #8395a7;
+    text-align: center;
+    box-shadow: 2px 3px 5px #576574;
+    font-weight: bold;
+}
+
+.header__photo {
+    width: 200px;
+    box-shadow: 2px 3px 5px #8395a7;
+}
+
+.header__hiddenPhoto {
+    display: none;
+}
+
+.header__hidePhotoButton,
+.header__backgroundChangeButton {
+    width: 200px;
+    background-color: #8395a7;
+    text-align: center;
+    box-shadow: 2px 3px 5px #576574;
+    font-weight: bold;
+}

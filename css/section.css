@@ -1,0 +1,23 @@
+.section__header {
+    background-color: #8395a7;
+    text-align: center;
+    box-shadow: 2px 3px 5px #576574;
+    font-weight: bold;
+}
+
+.section__list {
+    text-align: left;
+}
+
+.section__contactList {
+    list-style: none;
+}
+
+.section__contactLink {
+    text-decoration: none;
+    color: #576574;
+}
+
+.section__contactLink:hover {
+    background-color: #e5eaf0;
+}
