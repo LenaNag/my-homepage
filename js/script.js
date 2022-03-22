@@ -3,7 +3,7 @@
         const photo = document.querySelector(".js-header__photo");
         photo.classList.toggle("header__hiddenPhoto");
 
-        hidePhotoButton.innerText = (photo.classList.contains("header__hiddenPhoto"))
+        hidePhotoButton.innerText = photo.classList.contains("header__hiddenPhoto") 
             ? "Pokaż zdjęcie"
             : "Ukryj zdjęcie";
     };
@@ -30,7 +30,7 @@
         hobby.classList.toggle("js-navigation__link--dark");
         contact.classList.toggle("js-navigation__link--dark");
 
-        backgroundChangeButton.innerText = (content.classList.contains("darkContent"))
+        backgroundChangeButton.innerText = content.classList.contains("darkContent")
             ? "Włącz jasny motyw"
             : "Włącz ciemny motyw";
     };
