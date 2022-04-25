@@ -1,23 +1,14 @@
 {
-    const hidePhotoButton = document.querySelector(".js-header__hidePhotoButton");
-    const backgroundChangeButton = document.querySelector(".js-header__backgroundChangeButton");
-    
-    const hidePhoto = () => {
+    const hidePhoto = (hidePhotoButton) => {
         const photo = document.querySelector(".js-header__photo");
         photo.classList.toggle("header__hiddenPhoto");
-        
-        hidePhotoButton.innerText = photo.classList.contains("header__hiddenPhoto") 
+
+        hidePhotoButton.innerText = photo.classList.contains("header__hiddenPhoto")
             ? "Pokaż zdjęcie"
             : "Ukryj zdjęcie";
     };
-
-    const onHidePhotoClick = () => {
-        hidePhotoButton.addEventListener("click", hidePhoto);
-    };
-
-    onHidePhotoClick();
-
-    const onChangeBackgroundClick = () => {
+    
+    const onChangeBackgroundClick = (backgroundChangeButton) => {
         const content = document.querySelector(".js-content");
         const aboutMe = document.querySelector(".js-navigation__linkAboutMe");
         const education = document.querySelector(".js-navigation__linkEducation");
@@ -38,7 +29,11 @@
     };
 
     const init = () => {
-        backgroundChangeButton.addEventListener("click", onChangeBackgroundClick);
+        const hidePhotoButton = document.querySelector(".js-header__hidePhotoButton");
+        const backgroundChangeButton = document.querySelector(".js-header__backgroundChangeButton");
+
+        hidePhotoButton.addEventListener("click", () => {hidePhoto(hidePhotoButton)});
+        backgroundChangeButton.addEventListener("click", () => {onChangeBackgroundClick(backgroundChangeButton)});
     };
 
     init();
